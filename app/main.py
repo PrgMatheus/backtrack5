@@ -68,7 +68,7 @@ ScreenManager:
                     height: self.minimum_height
 
                     MainButton:
-                        text: '⌨   BACKTRACK5 TERMINAL'
+                        text: '⌨   BASHBT5 TERMINAL'
                         on_release: app.show_screen('terminal')
 
                     MainButton:
@@ -211,7 +211,7 @@ ScreenManager:
 class BackTrackApp(App):
 
     def build(self):
-        self.title = "BackTrack 5 Mobile"
+        self.title = "BackTrack5"
         manager = Builder.load_string(KV)
         manager.add_widget(BackTrackTerminal())
         return manager

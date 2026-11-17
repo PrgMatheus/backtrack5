@@ -1,0 +1,3 @@
+<service
+    android:name="org.backtrack5.bactrack5.BashBT5ResultService"
+    android:exported="false" />
