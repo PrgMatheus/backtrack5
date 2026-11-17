@@ -11,10 +11,10 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
-          pip install --upgrade buildozer cython==0.29.36 virtualenv
+          sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev lbzip2 libltdl-dev
+          pip install --upgrade pip buildozer cython==0.29.36 virtualenv
       - name: Build APK
-        run: yes | buildozer -v android debug
+        run: buildozer -v android debug
       - uses: actions/upload-artifact@v4
         with:
           name: bactrack5-apk

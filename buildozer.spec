@@ -5,7 +5,7 @@ package.domain = org.seuusuario
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,json,ttf,html,css,js
 version = 0.1
-requirements = python3,kivy==2.3.0,flask,setuptools
+requirements = python3,kivy==2.3.0,flask,werkzeug,jinja2,click,itsdangerous,markupsafe,setuptools
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
