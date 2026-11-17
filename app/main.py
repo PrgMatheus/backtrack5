@@ -7,6 +7,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.screenmanager import ScreenManager, Screen
+from terminal import BackTrackTerminal
 
 KV = """
 #:import dp kivy.metrics.dp
@@ -65,6 +66,10 @@ ScreenManager:
                     spacing: dp(10)
                     size_hint_y: None
                     height: self.minimum_height
+
+                    MainButton:
+                        text: '⌨   BACKTRACK5 TERMINAL'
+                        on_release: app.show_screen('terminal')
 
                     MainButton:
                         text: '◉   WI-FI E WIRELESS'
@@ -207,7 +212,9 @@ class BackTrackApp(App):
 
     def build(self):
         self.title = "BackTrack 5 Mobile"
-        return Builder.load_string(KV)
+        manager = Builder.load_string(KV)
+        manager.add_widget(BackTrackTerminal())
+        return manager
 
     def show_screen(self, screen):
         self.root.current = screen
