@@ -3,15 +3,15 @@ title = bactrack5
 package.name = bactrack5
 package.domain = org.seuusuario
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas,json,ttf
+source.include_exts = py,png,jpg,kv,atlas,json,ttf,html,css,js
 version = 0.1
-requirements = python3,kivy==2.3.0
+requirements = python3,kivy==2.3.0,flask,setuptools
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
 android.api = 33
 android.minapi = 21
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = arm64-v8a
 android.allow_backup = True
 android.accept_sdk_license = True
 
