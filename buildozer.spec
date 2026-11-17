@@ -5,7 +5,7 @@ package.domain = org.backtrack5
 source.dir = app
 source.include_exts = py,kv,png,jpg,jpeg,atlas,json,ttf
 version = 0.1
-requirements = python3,kivy==2.3.0,requests,certifi
+requirements = python3,kivy==2.3.2,requests,certifi
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
