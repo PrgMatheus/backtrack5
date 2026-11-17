@@ -1,11 +1,11 @@
 [app]
-title = bactrack5
+title = BackTrack 5 Mobile
 package.name = bactrack5
-package.domain = org.seuusuario
-source.dir = .
-source.include_exts = py,png,jpg,kv,atlas,json,ttf,html,css,js
+package.domain = org.backtrack5
+source.dir = app
+source.include_exts = py,kv,png,jpg,jpeg,atlas,json,ttf
 version = 0.1
-requirements = python3==3.11.9,kivy==2.3.0,flask,werkzeug,jinja2,click,itsdangerous,markupsafe,setuptools
+requirements = python3,kivy==2.3.0,requests,certifi
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
