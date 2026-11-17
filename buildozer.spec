@@ -1,5 +1,7 @@
 [app]
-android.extra_manifest_application_arguments = ./android/extra_manifest_application_arguments.xml
+android.extra_manifest_application_xml = ./android/extra_manifest_application_xml.xml
+p4a.branch = develop
+p4a.commit = 32994bea648eddf6808477ac91cd74632287a7fe
 android.add_src = ./android/src
 title = BackTrack5
 package.name = bactrack5

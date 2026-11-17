@@ -37,7 +37,8 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install buildozer cython==0.29.36
+          python -m pip install cython==0.29.36
+          python -m pip install "git+https://github.com/AndreMiras/buildozer.git@4edaffb1f7c9921fb36e611974606d2e11397449"
 
       - name: Build Android APK
         run: |
